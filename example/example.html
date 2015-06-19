@@ -24,7 +24,7 @@ var c = new Conrec,
     height = 800,
     x = d3.scale.linear().range([0, width]).domain([0, data.length]),
     y = d3.scale.linear().range([height, 0]).domain([0, data[0].length]),
-    colours = d3.scale.linear().domain([-5, 3]).range(["#fff", "red"]);
+    colours = d3.scale.linear().domain([-5, 3]).range(["#c2a5cf", "#7b3294"]);
 
 c.contour(data, 0, xs.length - 1, 0, ys.length - 1, xs, ys, zs.length, zs);
 
